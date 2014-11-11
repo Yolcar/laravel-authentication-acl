@@ -1,7 +1,7 @@
 laravel-authentication-acl
 ==========================
 
-[![Build Status](https://travis-ci.org/intrip/laravel-authentication-acl.png)](https://travis-ci.org/intrip/laravel-authentication-acl)
+[![Build Status](https://travis-ci.org/intrip/laravel-authentication-acl.svg?branch=1.2)](https://travis-ci.org/intrip/laravel-authentication-acl)
 
 ## Laravel5 Version, be aware this version is still under development and not working yet
 
