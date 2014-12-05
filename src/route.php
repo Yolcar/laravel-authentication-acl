@@ -11,8 +11,8 @@ use Illuminate\Session\TokenMismatchException;
 /**
  * User login and logout
  */
-Route::get('/admin/login', "Jacopo\\Authentication\\Controllers\\AuthController@getAdminLogin");
-Route::get('/login', "Jacopo\\Authentication\\Controllers\\AuthController@getClientLogin");
+Route::get('/admin/login', ['before' => 'check:/admin/users/dashboard',"uses" => "Jacopo\\Authentication\\Controllers\\AuthController@getAdminLogin"]);
+Route::get('/login', ['before' => 'check',"uses" => "Jacopo\\Authentication\\Controllers\\AuthController@getClientLogin"]);
 Route::get('/user/logout', "Jacopo\\Authentication\\Controllers\\AuthController@getLogout");
 Route::post('/user/login', [
         "before" => "csrf",
